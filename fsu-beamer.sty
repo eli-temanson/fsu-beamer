@@ -1,0 +1,70 @@
+
+
+\ProvidesPackage{fsu-beamer} % this is what the package will be named
+\usepackage{tikz} % Load TikZ
+
+%% \logo{ %% Switch if you want these figures on each slide
+\titlegraphic{
+  \begin{tikzpicture}[overlay,remember picture]
+    \node[right=0.5cm,yshift=-1.0cm] at (current page.north west){
+      \includegraphics[height=1cm]{figures/logos/fsu} };
+  \end{tikzpicture}
+  
+  \begin{tikzpicture}[overlay,remember picture]
+    \node[left=0.5cm,yshift=1.0cm] at (current page.south east){
+      \includegraphics[height=1cm]{figures/logos/aruna} };
+  \end{tikzpicture}
+
+  \begin{tikzpicture}[overlay,remember picture]
+    \node[right=0.5cm,yshift=1.0cm] at (current page.south west){
+       \includegraphics[height=1cm]{figures/logos/centaur} };
+  \end{tikzpicture}
+  
+  %% \begin{tikzpicture}[overlay,remember picture]
+  %%   \node[left=0.25cm,yshift=-0.75cm] at (current page.north east){
+  %%     \includegraphics[height=1cm]{figures/logos/black-spear} };
+  %% \end{tikzpicture}
+}
+
+
+
+%% Set the background wallpaper
+\setbeamertemplate{background}{ \includegraphics[ width=\paperwidth, height=\paperheight] {figures/backgrounds/fsu-white-background-nologo} }
+
+
+
+%% Set the titles in the center
+\setbeamertemplate{frametitle}{
+  \begin{centering}
+    \vskip 0.5cm
+    \insertframetitle
+    \par
+  \end{centering}
+}
+
+\setbeamerfont{frametitle}{size=\Large}
+
+
+
+
+%% Define colors
+\definecolor{fsu-black}{RGB}{44,42,41}
+\definecolor{fsu-garnet}{RGB}{120,47,64}
+\definecolor{fsu-gold}{RGB}{206,184,136}
+
+\setbeamercolor{title}{fg = fsu-black}
+\setbeamercolor{frametitle}{fg = fsu-black}
+\setbeamercolor{structure}{fg = fsu-garnet}
+
+
+
+% clear the predefined navigation symbols
+\beamertemplatenavigationsymbolsempty
+
+
+
+
+% print only the frame number in the footline
+\setbeamertemplate{footline}[frame number]
+\setbeamercolor{footline}{fg = fsu-garnet}
+

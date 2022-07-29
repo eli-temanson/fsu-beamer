@@ -1,0 +1,75 @@
+
+\documentclass[aspectratio=169]{beamer}
+\usepackage{fsu-beamer}
+
+%% Information to be included in the title page: 
+\title{Beamer Template for FSU Related Presentations }
+\subtitle{\vspace{0.25cm}Subtitle for more detail}
+\author{Eli Temanson}
+\institute{Florida State University}
+\date{2022}
+
+%% End of the document setup
+%% Start of the document
+
+\begin{document}
+
+\begin{frame}
+\vspace{1.5cm}
+\titlepage
+\end{frame}
+
+%% Page 1
+
+\begin{frame}{Introduction}
+  \begin{columns}
+    \column{0.45\textwidth}
+    \centering
+
+    \begin{figure}
+      \includegraphics[width=\textwidth]{example-image-a}
+      \caption{Caption one!}
+    \end{figure}
+
+    \column{0.45\textwidth}
+    \centering
+
+    \begin{figure}
+      \includegraphics[width=\textwidth]{example-image-b}
+      \caption{ $H\Psi = E\Psi$ }
+    \end{figure}
+
+  \end{columns}
+\end{frame}
+
+%% 
+
+\begin{frame}{Slide 2}
+  
+\end{frame}
+
+
+
+%% Last Slide Example
+
+\begin{frame}{Thank you!}
+  % Copied from the fsu-beamer.sty file which was placed on the title screen
+  \begin{tikzpicture}[overlay,remember picture]
+    \node[right=0.5cm,yshift=-1.0cm] at (current page.north west){
+      \includegraphics[height=1cm]{figures/logos/fsu} };
+  \end{tikzpicture}
+  \begin{tikzpicture}[overlay,remember picture]
+    \node[left=0.5cm,yshift=1.0cm] at (current page.south east){
+      \includegraphics[height=1cm]{figures/logos/aruna} };
+  \end{tikzpicture}
+  \begin{tikzpicture}[overlay,remember picture]
+    \node[right=0.5cm,yshift=1.0cm] at (current page.south west){
+       \includegraphics[height=1cm]{figures/logos/centaur} };
+  \end{tikzpicture}
+
+\end{frame}
+
+
+
+%% 
+\end{document}
