@@ -13,4 +13,4 @@ Take a look at an example [here][]!
 Compile by: ``` ./build.sh ```, this calls pdflatex several times and puts all the ouput files into the ./output directory. 
 
 
-[here]: ./ouput/presentation.pdf
+[here]: ./output/presentation.pdf
