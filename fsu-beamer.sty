@@ -3,6 +3,7 @@
 \ProvidesPackage{fsu-beamer} % this is what the package will be named
 \usepackage{tikz} % Load TikZ
 
+%% Change the logo figures here!
 %% \logo{ %% Switch if you want these figures on each slide
 \titlegraphic{
   \begin{tikzpicture}[overlay,remember picture]
@@ -29,7 +30,10 @@
 
 
 %% Set the background wallpaper
-\setbeamertemplate{background}{ \includegraphics[ width=\paperwidth, height=\paperheight] {figures/backgrounds/fsu-white-background-nologo} }
+\setbeamertemplate{background}
+{ 
+	\includegraphics[ width=\paperwidth, height=\paperheight] {figures/backgrounds/fsu-white-background-nologo} 
+}
 
 
 
